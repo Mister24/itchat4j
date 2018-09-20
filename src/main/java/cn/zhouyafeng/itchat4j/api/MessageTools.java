@@ -51,8 +51,8 @@ public class MessageTools {
 	 * 
 	 * @author https://github.com/yaphone
 	 * @date 2017年5月4日 下午11:17:38
-	 * @param msg
-	 * @param toUserName
+	 * @param text       发送的消息
+	 * @param toUserName 发送给的用户
 	 */
 	private static void sendMsg(String text, String toUserName) {
 		if (text == null) {
@@ -108,6 +108,7 @@ public class MessageTools {
 	 */
 	public static void webWxSendMsg(int msgType, String content, String toUserName) {
 		String url = String.format(URLEnum.WEB_WX_SEND_MSG.getUrl(), core.getLoginInfo().get("url"));
+
 		Map<String, Object> msgMap = new HashMap<String, Object>();
 		msgMap.put("Type", msgType);
 		msgMap.put("Content", content);

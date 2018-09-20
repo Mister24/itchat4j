@@ -8,10 +8,19 @@ package cn.zhouyafeng.itchat4j.utils.enums.parameters;
 public enum LoginParaEnum {
 
     LOGIN_ICON("loginicon", "true"),
+
+
     UUID("uuid", ""),
+
+
     TIP("tip", "0"),
+
+
     R("r", ""),
+
+    /** 时间戳 */
     _("_", "");
+
 
     private String para;
     private String value;

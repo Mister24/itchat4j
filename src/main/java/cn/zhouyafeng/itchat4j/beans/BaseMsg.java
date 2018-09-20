@@ -11,44 +11,96 @@ import java.io.Serializable;
  *
  */
 public class BaseMsg implements Serializable {
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
+
+	/**  */
 	private int subMsgType;
+
+	/** 语音长度 */
 	private int voiceLength;
+
+	/** 文件名称 */
 	private String fileName;
+
+	/** 图片宽度 */
 	private int imgHeight;
-	private String toUserName;
-	private int hasProductId;
+
+	/** 图片状态 */
 	private int imgStatus;
-	private String url;
+
+	/** 图片 */
 	private int imgWidth;
+
+	/** 消息接收者名称 */
+	private String toUserName;
+
+	/**  */
+	private int hasProductId;
+
+	/** 链接url */
+	private String url;
+
+	/**  */
 	private int forwardFlag;
+
+	/** 状态 */
 	private int status;
+
+	/**  */
 	private String Ticket;
-	/** 推荐消息报文 **/
+
+	/** 推荐消息报文 */
 	private RecommendInfo recommendInfo;
+
 	private long createTime;
+
+	/** 新消息id */
 	private String newMsgId;
-	/** 文本消息内容 **/
+
+	/** 文本消息内容 */
 	private String text;
-	/** 消息类型 **/
+
+	/** 消息类型 */
 	private int msgType;
-	/** 是否为群消息 **/
+
+	/** 是否为群消息 */
 	private boolean groupMsg;
+
+	/** 消息id */
 	private String msgId;
+
+	/** 状态通知码 */
 	private int statusNotifyCode;
+
+	/** app信息 */
 	private AppInfo appInfo;
+
+	/** app消息类型 */
 	private int appMsgType;
+
+	/** 类型 */
 	private String Type;
+
+	/**  */
 	private int playLength;
+
+
 	private String mediaId;
+
+
 	private String content;
+
+
 	private String statusNotifyUserName;
+
+
 	/** 消息发送者ID **/
 	private String fromUserName;
+
+
 	private String oriContent;
+
+
 	private String fileSize;
 
 	public int getSubMsgType() {

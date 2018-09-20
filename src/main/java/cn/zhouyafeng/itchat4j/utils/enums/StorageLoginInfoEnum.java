@@ -20,23 +20,25 @@ public enum StorageLoginInfoEnum {
 
     //baseRequest
     skey("skey",new String()),
+
     wxsid("wxsid",new String()),
+
     wxuin("wxuin",new String()),
+
     pass_ticket("pass_ticket",new String()),
 
 
     InviteStartCount("InviteStartCount",new Integer(0)),
+
     User("User",new JSONObject()),
+
     SyncKey("SyncKey",new JSONObject()),
+
     synckey("synckey",new String()),
 
-
-
     MemberCount("MemberCount",new String()),
+
     MemberList("MemberList",new JSONArray()),
-
-
-
     ;
 
     private String key;

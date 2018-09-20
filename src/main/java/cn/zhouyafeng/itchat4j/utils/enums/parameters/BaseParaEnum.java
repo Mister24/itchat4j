@@ -12,9 +12,13 @@ package cn.zhouyafeng.itchat4j.utils.enums.parameters;
 public enum BaseParaEnum {
 
     Uin("Uin", "wxuin"),
+
     Sid("Sid", "wxsid"),
+
     Skey("Skey", "skey"),
-    DeviceID("DeviceID", "pass_ticket");
+
+    DeviceID("DeviceID", "pass_ticket")
+    ;
 
     private String para;
     private String value;

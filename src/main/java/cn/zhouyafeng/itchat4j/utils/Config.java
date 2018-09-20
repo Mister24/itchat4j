@@ -68,7 +68,7 @@ public class Config {
 		} else if (os.indexOf(OsNameEnum.MAC.toString()) >= 0) {
 			return OsNameEnum.MAC;
 		}
-		return OsNameEnum.OTHER;
+		return OsNameEnum.OTHERS;
 	}
 
 }

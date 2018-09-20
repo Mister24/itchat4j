@@ -36,8 +36,8 @@ public class DownloadTools {
 	 * 
 	 * @author https://github.com/yaphone
 	 * @date 2017年4月21日 下午11:00:25
-	 * @param url
-	 * @param msgId
+	 * @param msg
+	 * @param type
 	 * @param path
 	 * @return
 	 */
@@ -45,6 +45,7 @@ public class DownloadTools {
 		Map<String, String> headerMap = new HashMap<String, String>();
 		List<BasicNameValuePair> params = new ArrayList<BasicNameValuePair>();
 		String url = "";
+
 		if (type.equals(MsgTypeEnum.PIC.getType())) {
 			url = String.format(URLEnum.WEB_WX_GET_MSG_IMG.getUrl(), (String) core.getLoginInfo().get("url"));
 		} else if (type.equals(MsgTypeEnum.VOICE.getType())) {

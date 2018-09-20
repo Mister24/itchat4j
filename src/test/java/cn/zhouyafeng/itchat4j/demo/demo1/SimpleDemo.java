@@ -54,7 +54,8 @@ public class SimpleDemo implements IMsgHandlerFace {
 	@Override
 	public String picMsgHandle(BaseMsg msg) {
 		String fileName = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss").format(new Date());// 这里使用收到图片的时间作为文件名
-		String picPath = "D://itchat4j/pic" + File.separator + fileName + ".jpg"; // 调用此方法来保存图片
+		String picPath = "/Users/mr.24/antFinancial/codeTrunk/itchat4j/msg/pic" + File.separator + fileName + ".jpg"; // 调用此方法来保存图片
+		//String picPath = "D://itchat4j/pic" + File.separator + fileName + ".jpg"; // 调用此方法来保存图片
 		DownloadTools.getDownloadFn(msg, MsgTypeEnum.PIC.getType(), picPath); // 保存图片的路径
 		return "图片保存成功";
 	}

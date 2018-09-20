@@ -9,5 +9,14 @@ package cn.zhouyafeng.itchat4j.utils.enums;
  *
  */
 public enum OsNameEnum {
-	WINDOWS, LINUX, DARWIN, MAC, OTHER
+
+	WINDOWS,
+
+	LINUX,
+
+	DARWIN,
+
+	MAC,
+
+	OTHERS
 }

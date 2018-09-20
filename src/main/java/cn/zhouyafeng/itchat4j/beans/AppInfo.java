@@ -11,11 +11,12 @@ import java.io.Serializable;
  *
  */
 public class AppInfo implements Serializable {
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
+
+	/** app类型 */
 	private int type;
+
+	/** appId */
 	private String appId;
 
 	public int getType() {

@@ -66,6 +66,7 @@ public class LoginServiceImpl implements ILoginService {
 	public boolean login() {
 
 		boolean isLogin = false;
+		
 		// 组装参数和URL
 		List<BasicNameValuePair> params = new ArrayList<BasicNameValuePair>();
 		params.add(new BasicNameValuePair(LoginParaEnum.LOGIN_ICON.para(), LoginParaEnum.LOGIN_ICON.value()));
